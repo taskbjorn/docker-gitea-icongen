@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: build
+    image: taskbjorn/gitea-icongen
+    volumes:
+      - ./input:/gitea/assets
+      - ./output:/gitea/public/img
